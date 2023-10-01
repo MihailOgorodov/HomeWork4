@@ -6,8 +6,11 @@ import java.util.Date;
  * Модель билета
  */
 public class Ticket{
-
-
+    private int routeNumber;
+    private int place;
+    private int price;
+    private Date date;
+    private boolean isValid;
 
     public Ticket(int routeNumber, int place, int price, Date date, boolean isValid) {
         this.routeNumber = routeNumber;
@@ -17,6 +20,35 @@ public class Ticket{
         this.isValid = isValid;
     }
 
+
+    public int getRouteNumber() {
+        return routeNumber;
+    }
+
+
+    public int getPlace() {
+        return place;
+    }
+
+
+    public int getPrice() {
+        return price;
+    }
+
+
+    public Date getDate() {
+        return date;
+    }
+
+
+    public boolean getValid() {
+        return isValid;
+    }
+
+
+    public void setValid(boolean valid) {
+        isValid = valid;
+    }
 
     @Override
     public String toString() {

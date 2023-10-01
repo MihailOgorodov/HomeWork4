@@ -6,8 +6,10 @@ import java.util.Objects;
  * Модель пользователя
  */
 public class User {
-
-
+    private int id;
+    private String userName;
+    private int hashPassword;
+    private long cardNumber;
 
     public User(int id, String userName, int hashPassword, long cardNumber) {
         this.id = id;
@@ -16,6 +18,25 @@ public class User {
         this.cardNumber = cardNumber;
     }
 
+
+    public int getId() {
+        return id;
+    }
+
+
+    public String getUserName() {
+        return userName;
+    }
+
+
+    public int getHashPassword() {
+        return hashPassword;
+    }
+
+
+    public long getCardNumber() {
+        return cardNumber;
+    }
 
     @Override
     public String toString() {
